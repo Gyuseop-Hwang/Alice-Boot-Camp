@@ -1,0 +1,51 @@
+/* 아래 코드는 문제 해결을 위해 기본적으로 제공되는 코드입니다. 수정하지 마세요! */
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+h1 {
+    color: orange;
+    font-size: 1rem;
+    background-color: yellow;
+    width: 20rem;
+    width: 50vw;
+    height: 20rem;
+    height: 50vh;
+}
+
+/* 지시사항 1번을 참고하여 코드를 작성하세요. */
+.list {
+    font-style: italic;
+}
+
+
+/* 지시사항 2번을 참고하여 코드를 작성하세요. */
+.list p:first-child {
+    font-weight: bold;
+}
+
+.list :nth-child(2) {
+    color: red;
+}
+
+.list ol li:nth-of-type(3) {
+    color: green;
+}
+
+/* .list ol li:nth-of-type(2n - 1) {
+    color: yellow;
+}
+
+*/
+
+/* 지시사항 3번을 참고하여 코드를 작성하세요. */
+.notice {
+    color: #532fa1;
+}
+
+
+/* 지시사항 4번을 참고하여 코드를 작성하세요. */
+.notice ol {
+    color: #a44789;
+}
