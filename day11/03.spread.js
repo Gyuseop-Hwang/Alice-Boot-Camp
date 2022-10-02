@@ -24,7 +24,7 @@ const newCopiedObj = { ...obj1 };
 
 // 함수 인자로 받아올 경우
 function sum(a, b, c) {
-	return a + b + c;
+  return a + b + c;
 }
 let pre = [100, 200, 300];
 console.log('sum=', sum(...pre));
@@ -32,21 +32,21 @@ console.log('sum=', sum(...pre));
 // Rest parameters
 
 function sum(first, second, ...nums) {
-	console.log(first);
-	console.log(second);
-	console.log(nums);
+  console.log(first);
+  console.log(second);
+  console.log(nums);
 }
 sum(1, 2, 0, 1, 2, 4);
 
 // Object 주의사항
 
 const nabi = {
-	name: '나비',
-	kind: '고양이',
-	actions: ['잠자기', '먹기'], 
+  name: '나비',
+  kind: '고양이',
+  actions: ['잠자기', '먹기'],
 };
 
-let updated = Object.assign({}, updated);
+let updated = Object.assign({}, nabi);
 console.log(nabi);
 
 updated = { ...nabi, age: 4 };

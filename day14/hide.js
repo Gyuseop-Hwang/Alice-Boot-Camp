@@ -7,5 +7,5 @@ button.addEventListener('click', function (evt) {
   // evt.currentTarget.nextElementSibling.remove();
   // this.nextElementSibling.remove();
   // this.nextElementSibling.style.display = 'none';
-  this.nextElementSibling.style.visibility = 'hidden'
+  this.nextElementSibling.style.display = 'block'
 })

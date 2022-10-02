@@ -1,0 +1,18 @@
+div {
+  background: yellow;
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+div:nth-of-type(1) {
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19), 0 -4px 8px 0 rgba(0, 0, 0, 0.20)
+}
+
+div:nth-of-type(2) {
+  box-shadow: 0 4px 8px 2px rgb(8, 8, 216)
+}
