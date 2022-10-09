@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>CoffeeMaker App</title>
+    </head>
+    <body>
+        <div id="root">
+            <main>
+                <h2>CoffeeMaker App</h2>
+
+                <div class="app">
+                    <div>
+                        <h3>커피 제조기 정보</h3>
+
+                        <ul class="coffee-maker-info">
+                            <li id="current-machine-text">현재 남은 머신의 대수 : 5</li>
+
+                            <li id="coffee-bean-text">남은 커피 콩 수 : 200</li>
+
+                            <li id="coffee-powder-text">남은 커피 파우더 : 100</li>
+
+                            <li id="coffee-text">남은 커피 : 200</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div>
+                            <label for="coffee-bean-input">커피콩 추가</label>
+                            <input
+                                id="coffee-bean-input"
+                                type="text"
+                                name="coffee-bean-input"
+                            />
+                            <button id="add-bean-button">추가</button>
+                        </div>
+
+                        <div class="controller">
+                            <button id="make-coffee-button">커피 주문하기</button>
+                            <button id="check-state-button">상태 확인하기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 id="status-text">앱을 구현하세요.</h3>
+                <pre><code id="status"></code></pre>
+            </main>
+        </div>
+
+        <script type="module" src="./index.js"></script>
+    </body>
+</html>

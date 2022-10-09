@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      padding: 150px;
+    }
+
+    .transform {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      transform-origin: 0 100%;
+      transform: rotate(45deg) scale(2, 3) translate(20px, 40px) skew(15deg, 20deg)
+    }
+
+    .test {
+      background: blue;
+      width: 100px;
+      height: 100px;
+      transform: translate(170px, 170px)
+    }
+
+    .test2 {
+      background: purple;
+      width: 100px;
+      height: 100px;
+      transform: translate(-100px, 200px)
+    }
+  </style>
+</head>
+
+<body>
+  <div class="transform"></div>
+  <div class="test"></div>
+  <div class="test2"></div>
+</body>
+
+</html>

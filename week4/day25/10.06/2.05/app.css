@@ -1,0 +1,25 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 8px;
+}
+
+.app > * + * {
+    margin-top: 8px;
+}
+
+.controller {
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.coffee-maker-info {
+    padding: 10px;
+    list-style: none;
+    border: 3px solid #efefef;
+    border-radius: 4px;
+}
