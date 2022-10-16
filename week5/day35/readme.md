@@ -1,0 +1,1 @@
+typescript랑 node 및 서버 공부를 했습니다.

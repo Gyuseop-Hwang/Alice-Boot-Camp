@@ -1,0 +1,36 @@
+// 파라미터, 리턴 타입 지정
+type User = {
+    name: string;
+    age?: number;
+};
+
+function play(name: string): User {
+    return {
+        name,
+    };
+}
+
+// 화살표 함수
+const paly2 = (name: string) => name;
+const paly3 = (name: string): User => ({ name });
+
+// Type
+type UserName = string;
+type User2 = {
+    name: UserName;
+    age?: number;
+};
+
+const obj2: User2 = {
+    name: "jh",
+};
+
+// Interface
+interface IUser {
+    name: string;
+    age?: number;
+}
+
+const obj3: IUser = {
+    name: "jh",
+};

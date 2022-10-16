@@ -2,46 +2,50 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>CSS 속성의 상속</title>
+  <meta charset="UTF-8">
+  <title>CSS 속성의 상속</title>
 
-    <style>
-        .header {
-            color: purple;
-        }
+  <style>
+    .header {
+      color: purple;
+    }
 
-        header {
-            color: red;
-        }
+    header {
+      color: red;
+    }
 
-        /* .header .test {
+    /* .header .test {
             color: blue;
         } */
 
-        /* .header h2 {
+    /* .header h2 {
             color: orange;
         } */
 
-        /* .test {
+    /* .test {
             color: green;
         } */
 
-        h2 {
-            color: palevioletred;
-        }
-    </style>
+    footer h2 {
+      color: red;
+    }
+
+    h2 {
+      color: palevioletred;
+    }
+  </style>
 </head>
 
 <body>
 
-    <header class="header">
-        <h2 class="test">Header H2</h2>
-        <p>Header P</p>
-    </header>
-    <footer>
-        <h2>Footer H2</h2>
-        <p>Footer P</p>
-    </footer>
+  <header class="header">
+    <h2 class="test">Header H2</h2>
+    <p>Header P</p>
+  </header>
+  <footer>
+    <h2>Footer H2</h2>
+    <p>Footer P</p>
+  </footer>
 </body>
 
 </html>

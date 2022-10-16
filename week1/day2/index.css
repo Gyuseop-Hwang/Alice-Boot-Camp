@@ -5,33 +5,33 @@
 } */
 
 h1 {
-    color: orange;
-    font-size: 1rem;
-    background-color: yellow;
-    width: 20rem;
-    width: 50vw;
-    height: 20rem;
-    height: 50vh;
+  color: orange;
+  font-size: 1rem;
+  background-color: yellow;
+  width: 20rem;
+  width: 50vw;
+  height: 20rem;
+  height: 50vh;
 }
 
 /* 지시사항 1번을 참고하여 코드를 작성하세요. */
 .list {
-    font-style: italic;
+  font-style: italic;
 }
 
 
 /* 지시사항 2번을 참고하여 코드를 작성하세요. */
-.list p:first-child {
-    font-weight: bold;
+/* .list p:first-child {
+  font-weight: bold;
 }
 
 .list :nth-child(2) {
-    color: red;
+  color: red;
 }
 
 .list ol li:nth-of-type(3) {
-    color: green;
-}
+  color: green;
+} */
 
 /* .list ol li:nth-of-type(2n - 1) {
     color: yellow;
@@ -40,12 +40,22 @@ h1 {
 */
 
 /* 지시사항 3번을 참고하여 코드를 작성하세요. */
-.notice {
-    color: #532fa1;
+/* .notice {
+  color: #532fa1;
+} */
+div[class="notice"] {
+  color: #532fa1;
 }
 
-
 /* 지시사항 4번을 참고하여 코드를 작성하세요. */
-.notice ol {
-    color: #a44789;
+/* .notice ol {
+  color: #a44789;
+} */
+
+.list + .notice {
+  color: black;
+}
+
+.li1 + .li3 {
+  color: red;
 }

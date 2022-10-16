@@ -1,42 +1,42 @@
 body, html {
-    margin: 0;
-    padding: 0;
-    font-size: 0;
-    /* letter-spacing: 0;
-    word-spacing: 0; */
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  /* letter-spacing: 0; */
+  /* word-spacing: 0; */
 }
 
 div {
-    display: inline-block;
-    /* font-size: 16px; */
+  display: inline-block;
+  font-size: 16px;
 }
 
 
 div:nth-of-type(1) {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    background-color: black;
-    animation: test 5s ease-in infinite normal 1s;
-    /* animation-name */
-    /* animation-duration */
-    /* animation-timing-function */
-    /* animation-iteration-count */
-    /* animation-direction */
-    /* animation-delay */
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  animation: test 5s ease-in infinite normal 1s;
+  /* animation-name */
+  /* animation-duration */
+  /* animation-timing-function */
+  /* animation-iteration-count */
+  /* animation-direction */
+  /* animation-delay */
 }
 
 div:nth-of-type(2) {
-    width: 100px;
-    height: 100px;
-    background-color: purple;
+  width: 100px;
+  height: 100px;
+  background-color: purple;
 }
 
 
 
 @keyframes test {
 
-    /* from {
+  /* from {
         left: 0px;
         top: 0px;
     }
@@ -46,34 +46,34 @@ div:nth-of-type(2) {
         top: 100px;
     } */
 
-    0% {
-        left: 0px;
-        top: 0px;
-        background-color: red;
-    }
+  0% {
+    left: 0px;
+    top: 0px;
+    background-color: red;
+  }
 
-    25% {
-        left: 100px;
-        top: 0px;
-        background-color: yellow;
-    }
+  25% {
+    left: 100px;
+    top: 0px;
+    background-color: yellow;
+  }
 
-    50% {
-        left: 100px;
-        top: 100px;
-        background-color: blue;
-    }
+  50% {
+    left: 100px;
+    top: 100px;
+    background-color: blue;
+  }
 
-    75% {
-        left: 0px;
-        top: 100px;
-        background-color: green;
-    }
+  75% {
+    left: 0px;
+    top: 100px;
+    background-color: green;
+  }
 
-    100% {
-        left: 0px;
-        top: 0px;
-        background-color: aqua;
-    }
+  100% {
+    left: 0px;
+    top: 0px;
+    background-color: aqua;
+  }
 
 }
