@@ -5,12 +5,23 @@ const admins = require('../data/admins');
 
 //setUser 함수를 관리자 모드에서도 사용할 수 있도록 설정하세요.
 //setUser 미들웨어를 ()=> (arrow function)을 추가해서 함수형 미들웨어로 변경하세요. 인자는 type으로 설정합니다.
-const setUser = type => (req, res, next) => {
+// const setUser = type => (req, res, next) => {
+//   const { userName } = req.query;
+//   //   req.user = users[userName];
+//   //type이 관리자(admin)일 경우 req.user를 admins의 userName으로 세팅하세요.
+//   type === 'admin' ? (req.user = admins[userName]) : (req.user = users[userName]);
+
+//   next();
+// };
+
+const setUser = (req, res, next) => {
   const { userName } = req.query;
   //   req.user = users[userName];
   //type이 관리자(admin)일 경우 req.user를 admins의 userName으로 세팅하세요.
-  type === 'admin' ? (req.user = admins[userName]) : (req.user = users[userName]);
-
+  // type === 'admin' ? (req.user = admins[userName]) : (req.user = users[userName]);
+  console.log(req.path, req.originalUrl)
+  req.originalUrl === '/admin' ? req.user = admins[userName] : req.user = users[userName]
+  // req.test === '/admin' ? req.user = admins[userName] : req.user = users[userName]
   next();
 };
 
